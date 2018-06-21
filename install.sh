@@ -1,7 +1,7 @@
 #!/bin/bash
 ################################################################################
 # Original Author:   crombiecrunch
-# Fork Author: manfromafar
+# Fork Author: ronink77
 # Current Author: Xavatar
 # Web:     
 #
@@ -26,16 +26,16 @@ displayErr() {
     output " "
     output "Make sure you double check before hitting enter! Only one shot at these!"
     output " "
-    read -e -p "Enter time zone (e.g. America/New_York) : " TIME
-    read -e -p "Server name (no http:// or www. just example.com) : " server_name
-    read -e -p "Are you using a subdomain (pool.example.com?) [y/N] : " sub_domain
-    read -e -p "Enter support email (e.g. admin@example.com) : " EMAIL
-    read -e -p "Set stratum to AutoExchange? i.e. mine any coinf with BTC address? [y/N] : " BTC
-    read -e -p "Please enter a new location for /site/adminRights this is to customize the admin entrance url (e.g. myAdminpanel) : " admin_panel
-    read -e -p "Enter your Public IP for admin access (http://www.whatsmyip.org/) : " Public
-    read -e -p "Install Fail2ban? [Y/n] : " install_fail2ban
-    read -e -p "Install UFW and configure ports? [Y/n] : " UFW
-    read -e -p "Install LetsEncrypt SSL? IMPORTANT! You MUST have your domain name pointed to this server prior to running the script!! [Y/n]: " ssl_install
+    read -e -p "Ingresa la zona horaria (e.g. America/New_York) : " TIME
+    read -e -p "Nombre del servidor (no http:// or www. just example.com) : " server_name
+    read -e -p "Estás usando un subdominio (pool.example.com?) [y/N] : " sub_domain
+    read -e -p "Ingresa el email de soporte (e.g. admin@example.com) : " EMAIL
+    read -e -p "Establecer stratum en AutoExchange? i.e. mine any coinf with BTC address? [y/N] : " BTC
+    read -e -p "Por favor ingrese una nueva ubicación para /site/adminRights Esto personaliza la URL de entrada del administrador (e.g. myAdminpanel) : " admin_panel
+    read -e -p "Ingresa la ip publica del administrador (http://www.whatsmyip.org/) : " Public
+    read -e -p "Instalar Fail2ban? [Y/n] : " install_fail2ban
+    read -e -p "Instalar UFW and configure ports? [Y/n] : " UFW
+    read -e -p "Instalar LetsEncrypt SSL? IMPORTANTE! !DEBE tener su nombre de dominio apuntado a este servidor antes de ejecutar el script! [Y/n]: " ssl_install
     
     output " "
     output "Updating system and installing required packages."
